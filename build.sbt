@@ -1,5 +1,5 @@
 val dependencies = Seq(
-  "com.typesafe.akka" %% "akka-actor" % "2.3.6",
+  "com.typesafe.akka" %% "akka-actor" % "2.4.7",
   "io.spray" %% "spray-json" % "1.3.2"
 )
 
