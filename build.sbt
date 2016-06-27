@@ -1,6 +1,7 @@
 val dependencies = Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.4.7",
-  "io.spray" %% "spray-json" % "1.3.2"
+  "com.typesafe.akka" %% "akka-http-experimental" % "2.4.7",
+  "io.spray" %% "spray-json" % "1.3.2",
 )
 
 lazy val commonSettings = Seq(
@@ -15,3 +16,6 @@ lazy val root = (project in file(".")).
     name := "hello-bitcoin",
     libraryDependencies ++= dependencies
   )
+
+// Auto-import sbt-pack settings - finds main() automatically
+packAutoSettings

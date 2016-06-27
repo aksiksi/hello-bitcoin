@@ -1,19 +1,18 @@
 /**
   * Created by aksiksi on 5/23/16.
   */
-package tn.btx
+package tn.btx.hyena
 
 import akka.actor._
-
 import spray.json._
 import DefaultJsonProtocol._
 
+import scala.concurrent.Await
+import scala.concurrent.duration._
+
 class EchoActor extends Actor {
   def receive = {
-    case x: String => println(x)
-    case x: Int => println(x)
-    case x: List[Int] => println(x)
-    case _ => println("Unknown!")
+    case x => println(x)
   }
 }
 
